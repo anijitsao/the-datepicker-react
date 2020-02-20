@@ -1,3 +1,5 @@
-import {getDates} from './dateformatter'
+import React from 'react'
+import ReactDOM from 'react-dom'
+import ReactSimpleDatePicker from './ReactSimpleDatePicker'
 
-console.log('getDates', getDates())
+ReactDOM.render(<ReactSimpleDatePicker />, document.getElementById('root'));
