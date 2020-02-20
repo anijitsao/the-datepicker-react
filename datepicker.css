@@ -30,26 +30,54 @@ body {
 }
 
 .month--container {
-	border: solid 1px #ccc;
-	padding: 1em;
-	box-shadow: var(--box-shadow);
-	width: 50vw;
+    border: solid 1px #ccc;
+    padding: 1em;
+    box-shadow: var(--box-shadow);
+    width: 50vw;
+    display: grid;
+}
+
+.month--name {
+    justify-self: center;
+    padding: 0.1rem;
+    font-weight: var(--normal-font);
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.icon--left {
+    margin-right: 1rem;
+}
+
+.icon--right {
+    margin-left: 1rem;
 }
 
 .week--container {
-	display: grid;
-	grid-template-columns: repeat(7, 1fr);
-	place-items: center;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    place-items: center;
 }
 
 .day--of--month {
-	padding: 1em;
-	font-size: 0.8rem;
-	color: #848484;
+    padding: 1em;
+    font-size: 0.8rem;
+    color: #848484;
+    cursor: pointer;
+}
+
+.day--of--month:hover {
+    opacity: 0.7;
 }
 
 .active--date {
-	background-color: #2b34c8;
-	color: #fff;
-	border: solid 1px #07c1e4;
+    background-color: #2b34c8;
+    color: #fff;
+    border: solid 1px #07c1e4;
+}
+
+.no--hover {
+    cursor: default !important;
 }

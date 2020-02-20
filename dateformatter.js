@@ -1,38 +1,28 @@
-export function getDates() {
-    // get the value of today
-    let today = new Date()
-    if (today.getDate() > 1) {
-        if (today.getMonth() > 11) {
+export function getDates(month, year) {
+    console.log('code reaches here', month, year)
 
-            // set to the next year January
-            today = new Date(today.getFullYear() + 1, 0, 1)
-        } else if (today.getMonth() < 0) {
+    if (month && year) {
+        console.log('month and year received', month, year)
+        // set to the first day of the month and year received
+        let today = new Date(year, month, 1)
 
-            // set to the previous year December
-            today = new Date(today.getFullYear() - 1, 11, 1)
-        } else {
+        const NUM_OF_DAYS = 31
+        let monthOfDates = []
 
-            // set to the first day of the month
-            today = new Date(today.getFullYear(), today.getMonth(), 1)
+        // filling the Array with all the dates of a month
+        for (let i = 0; i < NUM_OF_DAYS; i++) {
+            monthOfDates.push(new Date(today.getTime() + i * 24 * 3600 * 1000))
         }
+
+        console.log('MOnth unformatted', monthOfDates)
+        return formatMonthDates(monthOfDates, today)
     }
-
-    const NUM_OF_DAYS = 31
-    let monthOfDates = []
-
-    // filling the Array with all the dates of a month
-    for (let i = 0; i < NUM_OF_DAYS; i++) {
-        monthOfDates.push(new Date(today.getTime() + i * 24 * 3600 * 1000))
-    }
-
-    console.log('MOnth unformatted', monthOfDates)
-    return formatMonthDates(monthOfDates, today)
 }
 
 // format the month of dates to a 2D array
 function formatMonthDates(monthOfDates, today) {
 
-    const NUM_OF_WEEKS = 5
+    const NUM_OF_WEEKS = 6
     let month = []
 
     // set the week of the month as 'NA'
@@ -56,7 +46,7 @@ function formatMonthDates(monthOfDates, today) {
         }
     }
 
-    console.log('MOnth as Formatted', month)
+    // console.log('MOnth as Formatted', month)
     return month
 }
 
