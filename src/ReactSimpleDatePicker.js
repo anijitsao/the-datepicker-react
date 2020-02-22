@@ -52,45 +52,45 @@ const ReactSimpleDatePicker = (props) => {
     // render
     return (
         <div className="month--container">
-        	<div className="month--name">
-        		<i className="fa fa fa-angle-left icon icon--left" onClick={handleMonthChange} id='left'></i>
-	        	{`${MONTH_NAMES[currentMonth]} ${currentYear}`}
-        		<i className="fa fa fa-angle-right icon icon--right" onClick={handleMonthChange} id='right'></i>
-        	</div>
-        	<div className="week--container">
-	        	{
-	        		DAY_NAMES.map((dayName)=>{
-		        		return (
-		        			<div key={dayName} className="day--of--month">{dayName}</div>
-		        		)
-		        	})
-	        	}
-        	</div>
-			{
-				monthDays.map((week, weekIndex)=>{
-					return (
-						<div className="week--container" key={weekIndex}>
-							{
-								week.map((day, dayIndex)=>{
-									let dayStyle = new Date(day).getDate() == activeDate ? 'day--of--month active--date' : 'day--of--month'
-									dayStyle = (day == 'NA') ? 'dayStyle no--hover' : dayStyle
-									return (
-										<div className={dayStyle} 
-										key={dayIndex} 
-										id={`${weekIndex}-${dayIndex}`} 
-										onClick={handleDateChange}>
-											{day !== 'NA' ? day.getDate() : ''}
-										</div>
-									)
-								})
-							}
-						</div>
-					)
+            <div className="month--name">
+                <i className="fa fa fa-angle-left icon icon--left" onClick={handleMonthChange} id='left'></i>
+                {`${MONTH_NAMES[currentMonth]} ${currentYear}`}
+                <i className="fa fa fa-angle-right icon icon--right" onClick={handleMonthChange} id='right'></i>
+            </div>
+            <div className="week--container">
+                {
+                    DAY_NAMES.map((dayName) => {
+                        return (
+                            <div key={dayName} className="day--of--month">{dayName}</div>
+                        )
+                    })
+                }
+            </div>
+            {
+                monthDays.map((week, weekIndex) => {
+                    return (
+                        <div className="week--container" key={weekIndex}>
+                            {
+                                week.map((day, dayIndex) => {
+                                    let dayStyle = new Date(day).getDate() == activeDate ? 'day--of--month active--date' : 'day--of--month'
+                                    dayStyle = (day == 'NA') ? 'dayStyle no--hover' : dayStyle
+                                    return (
+                                        <div className={dayStyle}
+                                            key={dayIndex}
+                                            id={`${weekIndex}-${dayIndex}`}
+                                            onClick={handleDateChange}>
+                                            {day !== 'NA' ? day.getDate() : ''}
+                                        </div>
+                                    )
+                                })
+                            }
+                        </div>
+                    )
 
-				})
+                })
 
-			}
-		</div>
+            }
+        </div>
     )
 }
 

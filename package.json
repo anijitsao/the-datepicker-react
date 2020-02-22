@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "parcel serve public/index.html --no-cache --no-source-maps --no-hmr --port 8081",
-    "dev": "parcel serve index.html --no-hmr --port 8081"
+    "serve": "parcel serve src/index.html --no-cache --no-source-maps --no-hmr --port 8081",
+    "dev": "parcel serve src/index.html --no-hmr --port 8081"
   },
   "keywords": [],
   "author": "",
