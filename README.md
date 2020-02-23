@@ -23,7 +23,8 @@ or can be downloaded from [npm](https://www.npmjs.com/package/fontawesome) and i
 
 to use this component in your application use
 
-`<ReactSimpleDatepicker   
+`<ReactSimpleDatepicker`
 
-    onSelectedDate={onSelectesDateHandler}
-  />`
+    `onSelectedDate={onSelectesDateHandler}` 
+    
+  `/>`
