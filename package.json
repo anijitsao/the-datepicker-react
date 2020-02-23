@@ -6,29 +6,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-<<<<<<< HEAD
   "repository": {
     "type": "git",
     "url": "git+https://github.com/anijitsahu/the-datepicker-react.git"
-=======
-   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/anijitsahu/react-simple-datepicker.git"
->>>>>>> 6bb372b5a85cbb9269cde3dc668c6ac68d084336
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
    "bugs": {
-<<<<<<< HEAD
     "url": "https://github.com/anijitsahu/the-datepicker-react/issues"
   },
   "homepage": "https://github.com/anijitsahu/the-datepicker-react#readme",
-=======
-    "url": "https://github.com/anijitsahu/react-simple-datepicker/issues"
-  },
-  "homepage": "https://github.com/anijitsahu/react-simple-datepicker#readme",
->>>>>>> 6bb372b5a85cbb9269cde3dc668c6ac68d084336
   "dependencies": {},
   "peerDependencies": {
     "react": "^16.12.0",
