@@ -49,7 +49,7 @@ Now render the datepicker component into your application use
         onSelectedDate={onSelectedDateHandler}    
     />
 ```
-In the *parent* component write one method to receive the selected date from the child component write one method   
+In the *parent* component write one method to receive the selected date from the datepicker component   
 ```javascript
 const onSelectedDateHandler = (date) => {
     console.log("date received", date)
