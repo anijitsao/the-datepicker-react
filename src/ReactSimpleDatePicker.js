@@ -7,8 +7,9 @@ import './datepicker.css'
 const ReactSimpleDatePicker = (props) => {
     // set today as a constant
     let today = new Date()
+    let allDays = getDates(today.getMonth(), today.getFullYear())
 
-    const [monthDays, setMonthDays] = useState(getDates(today.getMonth(), today.getFullYear()))
+    const [monthDays, setMonthDays] = useState(allDays)
     const [activeDate, setActiveDate] = useState(today.getDate())
     const [currentMonth, setCurrentMonth] = useState(today.getMonth())
     const [currentYear, setCurrentYear] = useState(today.getFullYear())
@@ -26,6 +27,11 @@ const ReactSimpleDatePicker = (props) => {
         const [week, day] = event.target.id.split('-')
         const selectedDate = new Date(monthDays[week][day])
         setActiveDate(selectedDate.getDate())
+        
+        // send the selected date as prop to the parent component
+        if(monthDays[week][day] !=='NA') {
+            props.onSelectedDate(selectedDate)
+        }
     }, [activeDate])
 
     // handle when month navigation is clicked
