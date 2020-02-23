@@ -31,18 +31,18 @@ This datepicker component uses [Fontawesome](https://fontawesome.com/) for the i
 Or can be downloaded from [npm](https://www.npmjs.com/package/fontawesome) and included in the project.  
 
 #### Import
-Import the component in your application by
+Import the component in your application by,
 ```javascript
    import ReactSimpleDatepicker from 'the-datepicker-react'
 ```  
 
-if you directly use the source code
+If you are using the source code directly,
 ```javascript
-   import ReactSimpleDatepicker from '/path/to/the-date-picker/ReactSimpleDatepicker.js'
+   import ReactSimpleDatepicker from '/path/to/the-datepicker-react/ReactSimpleDatepicker.js'
 ```  
 
 #### Use
-to use this component in your application use
+Now render the datepicker component into your application use
 
 ```jsx 
     <ReactSimpleDatepicker
