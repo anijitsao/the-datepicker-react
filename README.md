@@ -33,12 +33,12 @@ Or can be downloaded from [npm](https://www.npmjs.com/package/fontawesome) and i
 #### Import
 Import the component in your application by,
 ```javascript
-   import ReactSimpleDatepicker from 'the-datepicker-react'
+   import ReactSimpleDatepicker from 'the-datepicker-react;'
 ```  
 
 If you are using the source code directly,
 ```javascript
-   import ReactSimpleDatepicker from '/path/to/the-datepicker-react/ReactSimpleDatepicker.js'
+   import ReactSimpleDatepicker from '/path/to/the-datepicker-react/ReactSimpleDatepicker.js;'
 ```  
 
 #### Use
@@ -52,6 +52,6 @@ Now render the datepicker component into your application use
 In the *parent* component write one method to receive the selected date from the datepicker component   
 ```javascript
 const onSelectedDateHandler = (date) => {
-    console.log("date received", date)
+    console.log("date received", date);
 }
 ```
