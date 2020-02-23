@@ -17,14 +17,22 @@ Cloning the repository directly from Github use the following command
 
 ## Usage 
 This datepicker component uses [Fontawesome](https://fontawesome.com/) for the icons. So, include [Fontawesome](https://fontawesome.com/) library in the `index.html` by the following command, <br/>
-`<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">`. 
-or can be downloaded from [npm](https://www.npmjs.com/package/fontawesome) and included in the project.  
+```html
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+```
+Or can be downloaded from [npm](https://www.npmjs.com/package/fontawesome) and included in the project.  
 
 
 to use this component in your application use
 
 ```jsx 
     <ReactSimpleDatepicker
-        onSelectedDate={onSelectesDateHandler}    
+        onSelectedDate={onSelectedDateHandler}    
     />
+```
+In the *parent* component write one method to receive the selected date from the child component write one method   
+```javascript
+onSelectedDateHandler = (date) => {
+    console.log('date received', date)
+}
 ```
