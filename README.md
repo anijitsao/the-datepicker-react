@@ -5,7 +5,7 @@ Full documentation can be found in [Github](https://github.com/anijitsahu/the-da
 
 ## Introduction
 
-This is a Simple datepicker component using [React JS](https://reactjs.org/). As it is using `state` in the _Functional Component_ `v16.9` of [React JS](https://reactjs.org/) is needed. It has no other dependencies.
+This is a Simple datepicker component using [React JS](https://reactjs.org/). It has no other dependencies apart from [React JS](https://reactjs.org/).
 
 ## Installation
 
@@ -27,12 +27,11 @@ git clone https://github.com/anijitsahu/the-datepicker-react.git
 
 ## Usage
 
-This datepicker component uses [Fontawesome](https://fontawesome.com/) for the icons. So, include [Fontawesome](https://fontawesome.com/) library in the `index.html` by the following command,
-
+This datepicker component uses [Fontawesome](https://fontawesome.com/) for the icons. So, include [Fontawesome](https://fontawesome.com/) library in the `index.html` by
 ```html
 <link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    href="<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" referrerpolicy="no-referrer" />"
 />
 ```
 
