@@ -17,7 +17,6 @@
     "url": "https://github.com/anijitsahu/the-datepicker-react/issues"
   },
   "homepage": "https://github.com/anijitsahu/the-datepicker-react#readme",
-  "dependencies": {},
   "peerDependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
@@ -27,7 +26,9 @@
     "@babel/preset-react": "^7.16.5",
     "babel-loader": "^8.2.3",
     "css-loader": "^6.5.1",
-    "style-loader": "^3.3.1"
+    "style-loader": "^3.3.1",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
