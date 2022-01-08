@@ -58,7 +58,8 @@ Now render the datepicker component into your application use
 
 ```jsx
 const onSelectedDateHandler = (date) => {
-    console.log("date received", date)
+    console.log("date received", date);
 }
-;<ReactSimpleDatepicker onSelectedDate={onSelectedDateHandler} />
+
+<ReactSimpleDatepicker onSelectedDate={onSelectedDateHandler} />
 ```
