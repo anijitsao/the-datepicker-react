@@ -22,7 +22,7 @@ npm install the-datepicker-react --save
 Cloning the repository directly from Github
 
 ```
-git clone https://github.com/anijitsahu/the-datepicker-react.git
+git clone https://github.com/anijitsao/the-datepicker-react.git
 ```
 
 ## Usage
